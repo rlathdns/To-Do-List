@@ -1,0 +1,13 @@
+h1 {
+    color: #225A98;
+    text-shadow: 4px 4px 2px #D9EAFD;
+    font-size: 96px;
+    text-align: center;
+}
+body{
+    margin: 0px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FBFCFD, #D9EAFD);
+    
+    
+}
