@@ -1,8 +1,10 @@
 h1 {
     color: #225A98;
-    text-shadow: 4px 4px 2px #D9EAFD;
-    font-size: 96px;
+    text-shadow: 8px 8px 2px #D9EAFD;
+    font-size: 121px;
     text-align: center;
+    margin: 150px;
+    padding: 5px;
 }
 body{
     margin: 0px;
@@ -10,20 +12,51 @@ body{
     background: linear-gradient(to bottom, #FBFCFD, #D9EAFD);
     
     
+    
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 a.login-btn{
     display: block;
     background-color: #225A98;
     color: #F8FAFC;
-    width: 300px;
+    width: 430px;
     height: 60px;
+    line-height: 60px;
     padding: 0;
     text-align: center;
     text-decoration: none;
+    align-items: center;
     border-radius: 5px;
     font-size: 20px;
+    margin: 10px;
 }
 .login-btn:hover{
+    background-color: #BCCCDC;
+}
+
+
+
+a.sign_inBtn{
+    display: block;
     background-color: #F8FAFC;
     color: #225A98;
+    width: 430px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 30px;
+
+
+}
+.sign_inBtn:hover{
+    background-color: #BCCCDC;
 }
