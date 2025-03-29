@@ -10,9 +10,6 @@ body{
     margin: 0px;
     height: 100vh;
     background: linear-gradient(to bottom, #FBFCFD, #D9EAFD);
-    
-    
-    
 }
 .login{
     display: flex;

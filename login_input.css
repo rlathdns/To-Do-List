@@ -1,0 +1,24 @@
+h1 {
+    color: #225A98;
+    text-shadow: 8px 8px 2px #D9EAFD;
+    font-size: 121px;
+    text-align: center;
+    margin: 150px;
+    padding: 5px;
+}
+body{
+    margin: 0px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FBFCFD, #D9EAFD);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a.input{
+    width: 430px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #F3F9FF;
+}
