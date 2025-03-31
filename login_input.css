@@ -14,11 +14,26 @@ body{
 .login{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 4px;
+    margin:L= 100px;
 }
-a.input{
-    width: 430px;
+input.in{
+    width: 500px;
     height: 60px;
-    border-radius: 5px;
+    border-radius: 15px;
+    font-size: 15px;
     background-color: #F3F9FF;
+    padding-left: 10px;
+    outline: none;
+    border: 0;
+}
+
+.input_label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    width: 500px; 
+    padding-left: 10px;
+    margin-bottom: 5px; 
 }
