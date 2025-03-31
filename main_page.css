@@ -1,3 +1,23 @@
 body{
     background-color: #F8FAFC;
 }
+div.to_do{
+    width:  226px;
+    height: 235px;
+    background-color: #D9EAFD;
+    border-radius: 36px;
+
+}
+div.end_to_do{
+    width:  226px;
+    height: 333px;
+    background-color: #D9EAFD;
+    border-radius: 36px;
+}
+
+div.not_end_to_do{
+    width:  226px;
+    height: 333px;
+    background-color: #D9EAFD;
+    border-radius: 36px;
+}
