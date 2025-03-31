@@ -1,7 +1,7 @@
 body{
     background-color: #F8FAFC;
 }
-h1{
+.logo h1{
     position: fixed;
     top: -10px;
     left: 10px;
@@ -11,6 +11,37 @@ h1{
     color: #0F171F;
 
 }
+
+.perpersonality{
+    position:fixed;
+    top: 10px;
+    right: 15px;
+}
+.user{
+    font-size: 30px;
+    vertical-align: middle;
+    position: relative; 
+    top: -2px;   
+    color: #0F171F;
+  }
+.perpersonality h2{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #0F171F;
+    color: #0F171F;
+
+    
+}
+.perpersonality span {
+    display: inline-block;
+  }
+
+.logout {
+    color: #8A9197;
+  }
 .container{
     display: flex;
     justify-content: center;
@@ -19,12 +50,12 @@ h1{
     gap: 200px;
 }
 .to_do{
+    position: relative;
     width:  256px;
     height: 265px;
     background-color: #D9EAFD;
     border-radius: 36px;
     padding: 15px;
-    
 
 }
 .to_do h4{
@@ -36,6 +67,23 @@ h1{
     top:-28px;
     left: 5px;
 }
+.plus{
+    font-size: 27px;
+    vertical-align: middle;
+    position: absolute; 
+    top: 10px;   
+    right: 25px;
+    color: #225A98;
+}
+
+hr.line {
+    border: none;
+    position: relative;
+    top: -45px;
+    border-top: 1.5px solid #225A98;
+    box-shadow: 0 1px 2px rgba(34, 90, 152, 0.15); 
+}
+
 .end_to_do{
     width:  256px;
     height: 363px;
