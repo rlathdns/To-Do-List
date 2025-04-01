@@ -1,68 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="main_page.css">
-    <title>To do list</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1" rel="stylesheet" />
+  <link rel="stylesheet" href="main_page.css" />
+  <title>To do list</title>
 </head>
 <body>
-    <h1 class="logo">To Do List</h1>
-    <h2 class="perpersonality">
-        <span class="material-symbols-outlined user">account_circle</span>
-        <span class="username">홍길동님</span>
-        <span>/</span>
-        <span class="logout">로그아웃</span>
-    </h2>
-    <div class="container">
-        <div class="to_do">
-            <div class="to_do_header">
-                <h4>to do</h4>
-                <span class="material-symbols-outlined plus">add_circle</span>
-            </div>
-            
-            <hr class="line">
-            <div class="task">
-                <div class="task_row">
-                    <h5 class ="content">알고리즘 공부하기</h5>
-                    <span class="material-symbols-outlined check">radio_button_unchecked</span>
-                </div>
-                <h5 class ="date">2025.03.06까지</h5>
-            </div>
-            <div class="task">
-                <div class="task_row">
-                    <h5 class ="content">UI 디자인하기</h5>
-                    <span class="material-symbols-outlined check">radio_button_unchecked</span>
-                </div>
-                <h5 class ="date">2025.03.06까지</h5>
-            </div>
-    
+  <h1 class="logo">To Do List</h1>
+
+  <h2 class="perpersonality">
+    <span class="material-symbols-outlined user">account_circle</span>
+    <span class="username">홍길동님</span>
+    <span>/</span>
+    <span class="logout">로그아웃</span>
+  </h2>
+
+  <div class="container">
+    <div class="to_do">
+      <div class="to_do_header">
+        <h4>to do</h4>
+        <span class="material-symbols-outlined plus">add_circle</span>
+      </div>
+
+      <hr class="line">
+
+      <!-- 모달창 -->
+      <div id="modal-UI" class="modal">
+        <div class="modal-content">
+        
+          <a href="#" class="material-symbols-outlined close">arrow_back_ios_new</a>
+          <div class="icon">
+            <h5 class="title_todo">To Do</h5>
+          </div>
+
+          <div class="set">
+            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
+            <span class="txt">to do</span>
+          </div>
+
+          <h2 class="txt_content">알고리즘 공부하기</h2>
+          <hr class="modal_hr">
+
+          <div class="set">
+            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
+            <span class="txt">기한</span>
+          </div>
+
+          <h2 class="txt_content">2025.03.06 까지</h2>
+          <hr class="modal_hr">
+
+          <div class="text_btn">
+            <span class="text_btn_edit">수정</span>
+            <span class="text_btn_delete">삭제</span>
+          </div>
         </div>
-     
-        <div class="end_to_do">
-            <div class="to_do_header">
-                <h4>end to do</h4>
-            </div>
-            <hr class="line">
-            <div class="task">
-                <div class="task_row">
-                    <h5 class ="content">집 치우기</h5>
-                    <span class="material-symbols-outlined check">check_circle</span>
-                </div>
-            </div>
-    
+      </div>
+
+
+
+      <div id="modal-algo" class="modal">
+        <div class="modal-content">
+        
+          <a href="#" class="material-symbols-outlined close">arrow_back_ios_new</a>
+          <div class="icon">
+            <h5 class="title_todo">To Do</h5>
+          </div>
+
+          <div class="set">
+            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
+            <span class="txt">to do</span>
+          </div>
+
+          <h2 class="txt_content">디자인하기</h2>
+          <hr class="modal_hr">
+
+          <div class="set">
+            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
+            <span class="txt">기한</span>
+          </div>
+
+          <h2 class="txt_content">2025.03.06 까지</h2>
+          <hr class="modal_hr">
+
+          <div class="text_btn">
+            <span class="text_btn_edit">수정</span>
+            <span class="text_btn_delete">삭제</span>
+          </div>
         </div>
-        <div class="not_end_to_do">
-            <div class="to_do_header">
-                <h4>not end to do</h4>
-            </div>
-            <hr class="line">
-            <div class="task_row">
-                <h5 class ="content_not_end">이불 빨래하기</h5>
-                <span class="material-symbols-outlined check">radio_button_unchecked</span>
-            </div>
+      </div>
+
+      <!-- 첫 번째 task -->
+      <div class="task">
+        <div class="task_row">
+          <h5 class="content">
+            <a href="#modal-algo">알고리즘 공부하기</a>
+          </h5>
+          <span class="material-symbols-outlined check">radio_button_unchecked</span>
         </div>
+        <h5 class="date">2025.03.06까지</h5>
+      </div>
+
+      <!-- 두 번째 task -->
+      <div class="task">
+        <div class="task_row">
+          <h5 class="content">
+            <a href="#modal-UI"> 디자인하기</a>
+            </h5>
+          <span class="material-symbols-outlined check">radio_button_unchecked</span>
+        </div>
+        <h5 class="date">2025.03.06까지</h5>
+      </div>
     </div>
+
+    <!-- end to do -->
+    <div class="end_to_do">
+      <div class="to_do_header">
+        <h4>end to do</h4>
+      </div>
+      <hr class="line">
+      <div class="task">
+        <div class="task_row">
+          <h5 class="content">집 치우기</h5>
+          <span class="material-symbols-outlined check_end">check_circle</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- not end to do -->
+    <div class="not_end_to_do">
+      <div class="to_do_header">
+        <h4>not end to do</h4>
+      </div>
+      <hr class="line">
+      <div class="task_row">
+        <h5 class="content_not_end">이불 빨래하기</h5>
+        <span class="material-symbols-outlined check">radio_button_unchecked</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
