@@ -1,6 +1,9 @@
 body{
     background-color: #F8FAFC;
 }
+.material-symbols-outlined.filled {
+    font-variation-settings: 'FILL' 1;
+  }
 .logo h1{
     position: fixed;
     top: -10px;
@@ -77,6 +80,11 @@ body{
     vertical-align: middle;
     color: #3C70A9;
     padding-right: 7px;
+    font-variation-settings: 'FILL' 0;
+    font-family: 'Material Symbols Outlined';
+}
+.plus:hover{
+    font-variation-settings: 'FILL' 1;
 }
 
 .task{
@@ -105,6 +113,9 @@ body{
 .check{
     font-size: 26px;
     color: #3C70A9;
+    font-variation-settings: 
+        'FILL' 1,
+        'wght' 700;
 }
 
 hr.line {
@@ -141,11 +152,16 @@ hr.line {
     
 }
 .not_end_to_do h4{
-    position: relative;
     font-size: 20px;
     font-weight: bolder;
     color: #0F171F;
     -webkit-text-stroke: 1px #0F171F;
-    top:-28px;
-    left: 5px;
+    
+}
+.content_not_end{
+    color: #8A9197;
+    text-decoration: line-through;
+    font-size: 20px;
+    margin: 0;
+
 }
