@@ -175,8 +175,31 @@ hr.line {
     margin: 0;
 
 }
+.modal_plus_or_edit{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 20;
+}
+.modal_plus_or_edit_content{
+    background-color: #F3F9FF;
+    width: 508px;
+    height: 354px;
 
 
+}
+.X{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #E14C4F;
+}
+.modal_plus_or_edit:target{
+    display: flex;
+}
 .modal{
     position: absolute;
     right: 6px;
