@@ -58,33 +58,63 @@ body{
     padding: 15px;
 
 }
-.to_do h4{
-    position: relative;
+.to_do_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+.to_do_header h4{
     font-size: 20px;
     font-weight: bolder;
     color: #0F171F;
     -webkit-text-stroke: 1px #0F171F;
-    top:-28px;
-    left: 5px;
+    margin: 0px;
 }
 .plus{
     font-size: 27px;
     vertical-align: middle;
-    position: absolute; 
-    top: 10px;   
-    right: 25px;
-    color: #225A98;
+    color: #3C70A9;
+    padding-right: 7px;
+}
+
+.task{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.task_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 12px;
+}
+.content{
+   
+    font-size: 20px;
+    color: #0F171F;
+    margin: 0px;
+}
+.date{
+    
+    font-size: 16px;
+    color: #BCCCDC;
+    margin: 0px;
+    
+}
+.check{
+    font-size: 26px;
+    color: #3C70A9;
 }
 
 hr.line {
-    border: none;
-    position: relative;
-    top: -45px;
+    margin-top: 3px;
     border-top: 1.5px solid #225A98;
     box-shadow: 0 1px 2px rgba(34, 90, 152, 0.15); 
 }
 
 .end_to_do{
+    position: relative;
     width:  256px;
     height: 363px;
     background-color: #D9EAFD;
@@ -94,13 +124,11 @@ hr.line {
     
 }
 .end_to_do h4{
-    position: relative;
     font-size: 20px;
     font-weight: bolder;
     color: #0F171F;
     -webkit-text-stroke: 1px #0F171F;
-    top:-28px;
-    left: 5px;
+    
 }
 
 .not_end_to_do{
