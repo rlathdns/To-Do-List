@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1" rel="stylesheet" />
   <link rel="stylesheet" href="main_page.css" />
   <title>To do list</title>
@@ -18,71 +18,93 @@
   </h2>
 
   <div class="container">
+    <!-- TO DO SECTION -->
     <div class="to_do">
       <div class="to_do_header">
         <h4>to do</h4>
         <span class="material-symbols-outlined plus">add_circle</span>
       </div>
+      <hr class="line" />
 
-      <hr class="line">
+      <!-- Task 1 -->
+      <div class="task">
+        <div class="task_row">
+          <h5 class="content"><a href="#modal-algo">알고리즘 공부하기</a></h5>
+          <span class="material-symbols-outlined check">radio_button_unchecked</span>
+        </div>
+        <h5 class="date">2025.03.06까지</h5>
+      </div>
 
-      <!-- 모달창 -->
-      <div id="modal-UI" class="modal">
+      <!-- Task 2 -->
+      <div class="task">
+        <div class="task_row">
+          <h5 class="content"><a href="#modal-UI">디자인하기</a></h5>
+          <span class="material-symbols-outlined check">radio_button_unchecked</span>
+        </div>
+        <h5 class="date">2025.03.06까지</h5>
+      </div>
+
+      <!-- Modal: 알고리즘 공부하기 -->
+      <div id="modal-algo" class="modal">
         <div class="modal-content">
-        
           <a href="#" class="material-symbols-outlined close">arrow_back_ios_new</a>
-          <div class="icon">
-            <h5 class="title_todo">To Do</h5>
-          </div>
+          <div class="icon"><h5 class="title_todo">To Do</h5></div>
 
-          <div class="set">
-            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
-            <span class="txt">to do</span>
-          </div>
-
+          <div class="set"><span class="material-symbols-outlined filled toggle">fiber_manual_record</span><span class="txt">to do</span></div>
           <h2 class="txt_content">알고리즘 공부하기</h2>
-          <hr class="modal_hr">
+          <hr class="modal_hr" />
 
-          <div class="set">
-            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
-            <span class="txt">기한</span>
-          </div>
-
+          <div class="set"><span class="material-symbols-outlined filled toggle">fiber_manual_record</span><span class="txt">기한</span></div>
           <h2 class="txt_content">2025.03.06 까지</h2>
-          <hr class="modal_hr">
+          <hr class="modal_hr" />
 
           <div class="text_btn">
-            <a href="#modal_plus_or_edit" class="text_btn_edit">수정</a>
+            <a href="#modal_edit" class="text_btn_edit">수정</a>
             <span class="text_btn_delete">삭제</span>
           </div>
         </div>
       </div>
 
-    <!-- 모달창 2 -->
-
-      <div id="modal-algo" class="modal">
+      <!-- Modal: 디자인하기 -->
+      <div id="modal-UI" class="modal">
         <div class="modal-content">
-        
           <a href="#" class="material-symbols-outlined close">arrow_back_ios_new</a>
-          <div class="icon">
-            <h5 class="title_todo">To Do</h5>
-          </div>
+          <div class="icon"><h5 class="title_todo">To Do</h5></div>
 
-          <div class="set">
-            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
-            <span class="txt">to do</span>
-          </div>
-
+          <div class="set"><span class="material-symbols-outlined filled toggle">fiber_manual_record</span><span class="txt">to do</span></div>
           <h2 class="txt_content">디자인하기</h2>
-          <hr class="modal_hr">
+          <hr class="modal_hr" />
+
+          <div class="set"><span class="material-symbols-outlined filled toggle">fiber_manual_record</span><span class="txt">기한</span></div>
+          <h2 class="txt_content">2025.03.06 까지</h2>
+          <hr class="modal_hr" />
+
+          <div class="text_btn">
+            <a href="#modal_edit" class="text_btn_edit">수정</a>
+            <span class="text_btn_delete">삭제</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal: 수정 및 추가 -->
+      <div id="modal_edit" class="modal">
+        <div class="modal-content">
+          <a href="#" class="material-symbols-outlined close">arrow_back_ios_new</a>
+          <div class="icon_edit"><h5 class="title_todo_edit">To Do list</h5></div>
+
+          <div class="set_edit">
+            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
+            <span class="txt">To Do 입력</span>
+          </div>
+          <input type="text" class="edit_input" value="디자인하기" />
+          <hr class="modal_hr" />
 
           <div class="set">
             <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
-            <span class="txt">기한</span>
+            <span class="txt">To Do 기한 입력</span>
           </div>
-
-          <h2 class="txt_content">2025.03.06 까지</h2>
-          <hr class="modal_hr">
+          <input type="date" class="edit_input" value="2025-03-06" />
+          <hr class="modal_hr" />
 
           <div class="text_btn">
             <span class="text_btn_edit">수정</span>
@@ -90,42 +112,14 @@
           </div>
         </div>
       </div>
-      <!-- 수정및 to do 추가 모달창 -->
-      <div id = modal_edit class="modal_plus_or_edit">
-        <div class="modal_plus_or_edit_content">
-            <a href="#" class="material-symbols-outlined X">close_small</a>
-        </div>
-
-      </div>
-      <!-- 첫 번째 task -->
-      <div class="task">
-        <div class="task_row">
-          <h5 class="content">
-            <a href="#modal-algo">알고리즘 공부하기</a>
-          </h5>
-          <span class="material-symbols-outlined check">radio_button_unchecked</span>
-        </div>
-        <h5 class="date">2025.03.06까지</h5>
-      </div>
-
-      <!-- 두 번째 task -->
-      <div class="task">
-        <div class="task_row">
-          <h5 class="content">
-            <a href="#modal-UI"> 디자인하기</a>
-            </h5>
-          <span class="material-symbols-outlined check">radio_button_unchecked</span>
-        </div>
-        <h5 class="date">2025.03.06까지</h5>
-      </div>
     </div>
 
-    <!-- end to do -->
+    <!-- END TO DO -->
     <div class="end_to_do">
       <div class="to_do_header">
         <h4>end to do</h4>
       </div>
-      <hr class="line">
+      <hr class="line" />
       <div class="task">
         <div class="task_row">
           <h5 class="content">집 치우기</h5>
@@ -134,12 +128,12 @@
       </div>
     </div>
 
-    <!-- not end to do -->
+    <!-- NOT END TO DO -->
     <div class="not_end_to_do">
       <div class="to_do_header">
         <h4>not end to do</h4>
       </div>
-      <hr class="line">
+      <hr class="line" />
       <div class="task_row">
         <h5 class="content_not_end">이불 빨래하기</h5>
         <span class="material-symbols-outlined check">radio_button_unchecked</span>
