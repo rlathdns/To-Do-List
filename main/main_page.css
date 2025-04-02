@@ -180,30 +180,57 @@ body{
     margin: 0;
   }
   
-  .modal_plus_or_edit{
+  .modal_plus{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);
     display: none;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    z-index: 999;
   }
   
-  .modal_plus_or_edit_content{
+  .modal_plus_content{
     background-color: #F3F9FF;
-    width: 508px;
-    height: 354px;
+    width: 544px;
+    height: 361px;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
   }
   
   
-  .modal_plus_or_edit:target{
+  .modal_plus:target{
     display: flex;
   }
+ .icon_plus{
+    width: 156px;
+    height: 50px;
+    background-color: #225A98;
+    color: #F3F9FF;
+    -webkit-text-stroke: 1px #F3F9FF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 183px;
+    margin-bottom: 40px;
+ }
+ .title_todo_plus{
+    font-size: 24px;
+    color: #F3F9FF;
+    text-align: center;
+    text-justify: center;
+  }
   
-  .modal{
+  .modal, .modal_edit{
     position: absolute;
     right: 6px;
     display: none;
@@ -211,10 +238,10 @@ body{
     align-items: center;
     text-decoration: none;
     z-index: 10;
-    margin-bottom: 50px;
+    margin-top: -110px;
   }
   
-  .modal:target{
+  .modal:target, .modal_edit:target{
     display: flex;
   }
   
@@ -222,6 +249,8 @@ body{
     width: 63px;
     height: 27px;
     background-color: #225A98;
+    color: #F3F9FF;
+    -webkit-text-stroke: 1px #F3F9FF;
     border-radius: 9px;
     display: flex;
     align-items: center;
@@ -230,6 +259,7 @@ body{
     margin-left: 83px;
     margin-bottom: 20px;
   }
+ 
   
   .title_todo{
     font-size: 16px;
@@ -238,7 +268,7 @@ body{
     text-justify: center;
   }
   
-  .modal-content {
+  .modal-content, .modal_edit_content {
     background: #F8FAFC;
     padding: 24px;
     border-radius: 15px;
@@ -268,6 +298,12 @@ body{
     padding-right: 146px;
     margin-top: 20px;
   }
+  .set_plus{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+  }
   
   .material-symbols-outlined.filled {
     font-variation-settings: 'FILL' 1;
@@ -283,6 +319,7 @@ body{
     color: #3C70A9;
     font-size: 16px;
     font-weight: bolder;
+    white-space: nowrap; 
   }
   
   .close {
@@ -321,8 +358,65 @@ body{
     width: 90%;
     font-size: 18px;
     padding: 6px 10px;
-    margin-top: 8px;
-    margin-bottom: 12px;
+    margin-top: 4px;
+    margin-bottom: 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
   }
+
+  
+  .confirm_modal_edit{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  .confirm_modal_edit:target{
+    display: flex;
+  }
+  .confirm_edit_modal_content {
+    background: #F8FAFC;
+    border: 1px solid #225A98;
+    padding: 30px 40px;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 16px;
+    width: 336px;              
+    height: 187px;
+  }
+  .subtext{
+    color: #8A9197;
+    font-size: 12px;
+  }
+
+
+  .confirm_modal_delete{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  .confirm_modal_delete:target{
+    display: flex;
+  }
+  .confirm_delete_modal_content {
+    background: #F8FAFC;
+    border: 1px solid #225A98;
+    padding: 30px 40px;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 16px;
+    width: 336px;              
+    height: 187px;
+  }
+ 

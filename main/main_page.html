@@ -22,9 +22,36 @@
     <div class="to_do">
       <div class="to_do_header">
         <h4>to do</h4>
-        <span class="material-symbols-outlined plus">add_circle</span>
+        <a href="#add_modal">
+          <span class="material-symbols-outlined plus">add_circle</span>
+        </a>        
       </div>
       <hr class="line" />
+
+
+      <div id="add_modal" class="modal_plus">
+        <div class="modal_plus_content">
+          <a href="#" class="material-symbols-outlined close">arrow_back_ios_new</a>
+          <div class="icon_plus"><h5 class="title_todo_plus">To Do List</h5></div>
+
+          <div class="set_plus">
+            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
+            <span class="txt">To Do 입력</span>
+          </div>
+          <input type="text" class="edit_input" value="디자인하기" />
+
+          <div class="set_plus">
+            <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
+            <span class="txt">To Do 기한 입력</span>
+          </div>
+          <input type="date" class="edit_input" value="2025-03-06" />
+
+          <div class="text_btn">
+            <a href="#" class="text_btn_edit">취소</a>
+            <a href="#" class="text_btn_delete">저장후 닫기</a>
+          </div>
+        </div>
+      </div>
 
       <!-- Task 1 -->
       <div class="task">
@@ -81,38 +108,57 @@
 
           <div class="text_btn">
             <a href="#modal_edit" class="text_btn_edit">수정</a>
-            <span class="text_btn_delete">삭제</span>
+            <a href="#confirm_delete_modal" class="text_btn_delete">삭제</a>
+          </div>
+        </div>
+      </div>
+      <div id="confirm_delete_modal" class = "confirm_modal_delete">
+        <div class="confirm_delete_modal_content">
+          <p><strong>정말로 삭제하시겠습니까?</strong></p>
+          <p class="subtext">삭제후에는 복구하기 어렵습니다.</p>
+          <div class="text_btn">
+            <a href="#" class="text_btn_edit">예</a>
+            <a href="#modal-UI" class="text_btn_delete">아니요</a>
           </div>
         </div>
       </div>
 
       <!-- Modal: 수정 및 추가 -->
       <div id="modal_edit" class="modal">
-        <div class="modal-content">
+        <div class="modal_edit_content">
           <a href="#" class="material-symbols-outlined close">arrow_back_ios_new</a>
-          <div class="icon_edit"><h5 class="title_todo_edit">To Do list</h5></div>
+          <div class="icon"><h5 class="title_todo_edit">To Do</h5></div>
 
-          <div class="set_edit">
+          <div class="set">
             <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
             <span class="txt">To Do 입력</span>
           </div>
           <input type="text" class="edit_input" value="디자인하기" />
-          <hr class="modal_hr" />
 
           <div class="set">
             <span class="material-symbols-outlined filled toggle">fiber_manual_record</span>
             <span class="txt">To Do 기한 입력</span>
           </div>
           <input type="date" class="edit_input" value="2025-03-06" />
-          <hr class="modal_hr" />
 
           <div class="text_btn">
-            <span class="text_btn_edit">수정</span>
-            <span class="text_btn_delete">삭제</span>
+            <a href="#confirm_edit_modal" class="text_btn_edit">저장</a>
+            <a href="#modal-algo" class="text_btn_delete">취소</a>
+          </div>
+        </div>
+      </div>
+      <div id="confirm_edit_modal" class = "confirm_modal_edit">
+        <div class="confirm_edit_modal_content">
+          <p><strong>정말로 저장하시겠습니까?</strong></p>
+          <p class="subtext">저장후에는 변경된 내용으로 표시됩니다.</p>
+          <div class="text_btn">
+            <a href="#" class="text_btn_edit">예</a>
+            <a href="#modal_edit" class="text_btn_delete">아니요</a>
           </div>
         </div>
       </div>
     </div>
+    
 
     <!-- END TO DO -->
     <div class="end_to_do">
